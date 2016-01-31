@@ -41,13 +41,13 @@
 #   endif
 #endif // !RTTR_DATADIR
 
-#ifndef GAMEDIR
+#ifndef RTTR_GAMEDIR
 #   ifdef _WIN32
 #       define RTTR_GAMEDIR RTTR_PREFIX
 #   else
 #       define RTTR_GAMEDIR RTTR_DATADIR"/S2"
 #   endif
-#endif // !GAMEDIR
+#endif // !RTTR_GAMEDIR
 
 #ifndef RTTR_DRIVERDIR
 #   define RTTR_DRIVERDIR RTTR_DATADIR"/driver"
@@ -128,7 +128,7 @@ const char* const FILE_PATHS[] =
     /* 54 */RTTRDIR "",                               // unbenutzt
     /* 55 */RTTR_SETTINGSDIR "/LSTS/SOUND.LST",       // Die konvertierte sound.lst
     /* 56 */RTTRDIR "/sound.scs",                     // Das konvertier-script
-    /* 57 */RTTRDIR "",                               // Basispfad für den Soundconverter
+    /* 57 */RTTR_DRIVERDIR "",                        // Basispfad für den Soundconverter
     /* 58 */RTTR_GAMEDIR "/DATA/MIS0BOBS.LST",
     /* 59 */RTTR_GAMEDIR "/DATA/MIS1BOBS.LST",
     /* 60 */RTTR_GAMEDIR "/DATA/MIS2BOBS.LST",
